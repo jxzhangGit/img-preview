@@ -1,18 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <Previewer
+    :images="images"
+    width="100px"
+  />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import Previewer from "./components/Previewer/index.vue";
 
 @Options({
   components: {
-    HelloWorld,
+    Previewer,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  images = [
+    'https://img8.ddove.com/upload/20200627/152152572583.jpg',
+    'https://img8.ddove.com/upload/20200627/152152978159.jpg',
+    'https://img8.ddove.com/upload/20200627/152153415941.jpg',
+    'https://img8.ddove.com/upload/20200627/152155208751.jpg',
+    'https://img8.ddove.com/upload/20200627/152155646203.jpg',
+    'https://img8.ddove.com/upload/20200627/152159299376.jpg',
+    'https://img8.ddove.com/upload/20200627/152201339760.jpg',
+    'https://img8.ddove.com/upload/20200627/152200869879.jpg',
+    'https://img8.ddove.com/upload/20200627/152157825109.jpg',
+    'https://img8.ddove.com/upload/20200627/152156750946.jpg',
+    'https://img8.ddove.com/upload/20200627/152152572583.jpg',
+    'https://img8.ddove.com/upload/20200627/152152978159.jpg',
+    'https://img8.ddove.com/upload/20200627/152153415941.jpg',
+    'https://img8.ddove.com/upload/20200627/152155208751.jpg',
+    'https://img8.ddove.com/upload/20200627/152155646203.jpg',
+    'https://img8.ddove.com/upload/20200627/152159299376.jpg',
+    'https://img8.ddove.com/upload/20200627/152201339760.jpg',
+    'https://img8.ddove.com/upload/20200627/152200869879.jpg',
+    'https://img8.ddove.com/upload/20200627/152157825109.jpg',
+    'https://img8.ddove.com/upload/20200627/152156750946.jpg',
+  ];
+}
 </script>
 
 <style lang="less">
